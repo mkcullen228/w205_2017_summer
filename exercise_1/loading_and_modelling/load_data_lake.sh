@@ -34,14 +34,23 @@ MY_FILE5="hvbp_hcahps_11_10_2016.csv"
 NEW_FILE5="surveys_responses.csv"
 tail -n +2 "$MY_FILE5" > $NEW_FILE5
 
-# create hdfs dfs directory
+# create hdfs dfs directory for each file and put files on hdfs 
 hdfs dfs -mkdir /user/w205/hospital_compare
-# put files on hdfs
-hdfs dfs -put $NEW_FILE1 /user/w205/hospital_compare
-hdfs dfs -put $NEW_FILE2 /user/w205/hospital_compare
-hdfs dfs -put $NEW_FILE3 /user/w205/hospital_compare
-hdfs dfs -put $NEW_FILE4 /user/w205/hospital_compare
-hdfs dfs -put $NEW_FILE5 /user/w205/hospital_compare
+
+hdfs dfs -mkdir /user/w205/hospital_compare/hospitals
+hdfs dfs -put $NEW_FILE1 /user/w205/hospital_compare/hospitals
+
+hdfs dfs -mkdir /user/w205/hospital_compare/care
+hdfs dfs -put $NEW_FILE2 /user/w205/hospital_compare/care
+
+hdfs dfs -mkdir /user/w205/hospital_compare/readmissions
+hdfs dfs -put $NEW_FILE3 /user/w205/hospital_compare/readmissions
+
+hdfs dfs -mkdir /user/w205/hospital_compare/measures
+hdfs dfs -put $NEW_FILE4 /user/w205/hospital_compare/measures
+
+hdfs dfs -mkdir /user/w205/hospital_compare/surveys
+hdfs dfs -put $NEW_FILE5 /user/w205/hospital_compare/surveys
 
 # chage directory back to original working directory
 cd $MY_CWD
