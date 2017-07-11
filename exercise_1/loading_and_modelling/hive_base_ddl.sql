@@ -112,9 +112,7 @@ CREATE EXTERNAL TABLE measures
     measure_start_quarter string,
     measure_start_date string,
     measure_end_quarter string,
-    measure_end_date string,
-    footnote string,
-    footnote_text string
+    measure_end_date string
 )
 
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
@@ -130,6 +128,13 @@ LOCATION '/user/w205/hospital_compare/measures';
 DROP TABLE surveys;
 CREATE EXTERNAL TABLE surveys
 (
+    provider_number string,
+    hospital_name string, 
+    address string,
+    city string,
+    state string,
+    zip_code string,
+    country_name string,
     comm_nurses_floor string, 
     comm_nurses_achievementThresh string,
     comm_nurses_benchmark string,
