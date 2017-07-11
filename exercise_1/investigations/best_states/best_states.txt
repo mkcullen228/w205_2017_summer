@@ -1,0 +1,23 @@
+Hospital best care by State
+
+PR    314.60526315789474
+VI    202.25
+DC    162.58928571428572
+GU    139.0
+MD    128.51871657754012
+NY    123.54199683042789
+NV    120.91477272727273
+DE    118.0754716981132
+CA    117.58707987778263
+NH    116.35714285714286
+
+
+These results are based on the the hospital's timely and effective care
+score for hospitals with over 100 samples in survey data. Same quality metric
+used in the first question Best hospital) but organized by the state avearge of the score
+
+I used this score becuase it makes sure there is enough data in the survey
+data so that it represents the population and it is an overall score thattakes
+into account many differnt procedures over the entire period of time of the
+study.
+

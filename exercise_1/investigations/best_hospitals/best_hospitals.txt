@@ -1,0 +1,23 @@
+Results of query: 
+400117    HOSPITAL DR SUSONI INC  761.0
+400019    HOSPITAL PAVIA SANTURCE    701.0
+400098    HOSPITAL SAN FRANCISCO    680.0
+400105    HOSPITAL UNIVERSITARIO DR RUIZ ARNAU    647.0
+400014    BELLA VISTA HOSPITAL    601.5
+400013    HOSPITAL MENONITA DE CAYEY    546.5
+400110    HOSPITAL METROPOLITANO DR TITO MATTEI    403.5
+400079    HOSP COMUNITARIO BUEN SAMARITANO    403.25
+400112    HOSPITAL UPR, DR  FEDERICO TRILLA    365.3333333333333
+301309    MONADNOCK COMMUNITY HOSPITAL    360.6
+
+The hospital with the highest overall high-quality care is HOSPITAL DR SUSONI
+INC.  These results are based on the the hospital's timely and effective care
+score for hospitals with over 100 samples in survey data. 
+
+I used this score becuase it makes sure there is enough data in the survey
+data so that it represents the population and it is an overall score thattakes
+into account many differnt procedures over the entire period of time of the
+study.
+
+As you can see above, the third column is the average score for the hospital. 
+
