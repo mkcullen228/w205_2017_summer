@@ -22,7 +22,7 @@ class WordCounter(Bolt):
                 cur.close()
                 conn.close()
         except:
-                self.log("Could not create tcount database")
+                self.log("Could not create tcount database. May already exist.")
 
         # Connect to tcount
         conn = psycopg2.connect(database="tcount", user="postgres", password="pass", host="localhost", port="5432")
@@ -35,7 +35,7 @@ class WordCounter(Bolt):
                         count INT     NOT NULL);''')
                 conn.commit()
         except:
-                self.log("Could not create tweetwordcount table")
+                self.log("Could not create tweetwordcount table. May already exist.")
 
 
 
@@ -43,7 +43,7 @@ class WordCounter(Bolt):
         word = tup.values[0]
 
         # Increment the local count
-        self.counts[word] += 1
+	self.counts[word] += 1
         self.emit([word, self.counts[word]])
 
         # Log the count - just to see the topology running
