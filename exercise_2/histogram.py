@@ -32,7 +32,9 @@ if k1 > k2:
 SQL = "select * from tweetwordcount WHERE count >= %s AND count <= %s ORDER BY count"
 cur.execute(SQL, (k1,k2))
 rows = cur.fetchall()
-for row in rows:
-	print "%s: %d" % (row[0], row[1])
-
+if len(rows) > 0:
+	for row in rows:
+		print "%s: %d" % (row[0], row[1])
+else: 
+	print "No words with counts between %d and %d in tweetwordcount table" % (k1, k2)
  
