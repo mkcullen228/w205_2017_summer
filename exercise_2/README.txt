@@ -1,8 +1,6 @@
 Exercise 2 
-
 Step-by-Step instructions to running extweetwordcount Applictaion 
 
-To start you will need to update XXXX File with twitter credentials.  
 Ensure dependencies are installed and/or running 
 Dependencies can be found in the Architecture document.
 
