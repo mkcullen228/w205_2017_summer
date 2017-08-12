@@ -1,11 +1,4 @@
-Loading and Modeling Datafiles for exercise 1
+You will need Adobe Acrobat Reader to view the downloadable database instruction file. You can download this software from Adobe's web site. To get the software at no cost, copy and paste the link below into the browser address bar. It will take you to the Adobe Acrobat Reader download site.
 
-Exercise1_ERD_all is a png of ERD for data from the Centers for Medicare and
-	Medicaid Services (CMS) Hospital Compare - but may be hard to read
-Exercise1_ERD_zoom.png is a png of ERD but zoomed loser to see the entitry and
-	relationships more closely
-
-load_data_lake.sh - Load the raw data files into HDFS
-CLEAN_load_datalake - removes data loaded into hdfs and cleans the hdfs up. 
-hive_base_ddle.sql - data definition statements for medicade data in hdfs that was loaded in load_data_lake
+http://www.adobe.com/products/acrobat/readstep2.html
 

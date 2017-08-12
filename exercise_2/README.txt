@@ -4,6 +4,8 @@ Step-by-Step instructions to running extweetwordcount Applictaion
 Ensure dependencies are installed and/or running 
 Dependencies can be found in the Architecture document.
 
+Before you begin, be sure postgres is running, psycopg2 and tweepy are installed, and you have twitter API access tokens.  
+
 
 To run extweetwordcount: 
 This will parse tweets by word, add each word and count the occurances of each
