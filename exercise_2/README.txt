@@ -15,7 +15,6 @@ word in tweets seen while running.
 	3. To stop: press keys  Command + C
 
 
-
 To run finalresults.py 
 When passed a single word as an argument,returns the total number of word
 occurrences in the stream
